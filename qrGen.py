@@ -24,7 +24,8 @@ def main():
         else:
             buffer = generate_qr_code(data)
 
-            st.image(buffer, caption="Your QR Code", use_column_width=True, output_format="PNG")
+            st.image(buffer, caption="Your QR Code", use_container_width=True, output_format="PNG"), output_format="PNG")
+
             st.download_button(
                 label="Download QR Code",
                 data=buffer,
