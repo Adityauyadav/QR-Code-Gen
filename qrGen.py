@@ -18,7 +18,7 @@ def main():
 
     data = st.text_input("Enter the Text or URL for the QR code:", placeholder="Type here...")
 
-    if st.button("Generate QR Code"):
+    if st.button("Generate QR Code" , key="generate_qr"):
         if data.strip() == "":
             st.error("Please enter valid data to generate a QR code.")
         else:
